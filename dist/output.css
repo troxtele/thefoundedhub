@@ -591,6 +591,30 @@ html {
   max-width: 3.5rem;
 }
 
+.max-w-\[40rem\] {
+  max-width: 40rem;
+}
+
+.max-w-\[20rem\] {
+  max-width: 20rem;
+}
+
+.max-w-\[26rem\] {
+  max-width: 26rem;
+}
+
+.max-w-\[35rem\] {
+  max-width: 35rem;
+}
+
+.max-w-\[30rem\] {
+  max-width: 30rem;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -625,6 +649,10 @@ html {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded {
@@ -700,10 +728,6 @@ html {
   text-align: right;
 }
 
-.font-codeLight {
-  font-family: codeProLight;
-}
-
 .font-Montserrat {
   font-family: Montserrat;
 }
@@ -711,11 +735,6 @@ html {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-xl {
@@ -727,16 +746,16 @@ html {
   font-weight: 800;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
 .font-thin {
   font-weight: 100;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .uppercase {

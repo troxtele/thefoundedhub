@@ -65,39 +65,117 @@
     </header>
 
     <!------------------------- Main --------------------------->
-    <main class="bg-map map-img bg-center bg-cover h-full w-full">
-      <div class="container">
-        <div
-          class="wrapper pt-20 flex flex-col justify-center items-center gap-10"
-        >
-          <!-- Top content -->
+    <main
+      class="relative before:absolute before:content-[url('../images/map.png')] before:h-full before:w-full before:left-0 before:right-0 before:top-0 overflow-hidden"
+    >
+      <section>
+        <div class="container">
           <div
-            class="heading grid gap-2 justify-center items-center text-center font-semibold"
+            class="wrapper flex flex-col justify-center items-center gap-10 pt-10"
           >
-            <h1 class="text-6xl">Get Funded and trade our capital.</h1>
-            <h2 class="text-6xl">We take the risk.</h2>
-          </div>
+            <!-- Top content -->
+            <div
+              class="heading grid gap-2 justify-center items-center text-center font-medium"
+            >
+              <h1 class="text-6xl">Get Funded and trade our capital.</h1>
+              <h2 class="text-6xl">We take the risk.</h2>
+            </div>
 
-          <!-- Bottom content -->
-          <div
-            class="botton-content font-Montserrat flex w-full grid-cols-2 gap-10 items-center max-w-4xl text-right"
-          >
-            <p class="font-medium text-base-[1.1rem] max-w-[30rem]">
-              Where veteran and rookie traders all come together to compete in
-              the Hub. Trade how you like, pass the challenge & get funded with
-              our capital..
-            </p>
+            <!-- Bottom content -->
+            <div
+              class="botton-content font-Montserrat flex w-full grid-cols-2 gap-10 items-center max-w-4xl text-right"
+            >
+              <p class="font-medium text-base-[1.1rem] max-w-[30rem]">
+                Where veteran and rookie traders all come together to compete in
+                the Hub. Trade how you like, pass the challenge & get funded
+                with our capital..
+              </p>
 
-            <div class="btn flex font-extrabold flex-shrink-0">
-              <a
-                href="#"
-                class="uppercase font-base flex justify-center items-center py-2 px-4 border-4 border-white rounded-md whitespace-nowrap"
-                >get started now</a
-              >
+              <div class="btn flex font-extrabold flex-shrink-0">
+                <a
+                  href="#"
+                  class="uppercase font-base flex justify-center items-center py-2 px-4 border-4 border-white rounded-md whitespace-nowrap text-base"
+                  >get started now</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!------------------------- Evaluation --------------------------->
+      <section class="evaluation relative">
+        <div class="container">
+          <div class="wrapper max-w-[75rem] w-full box m-auto py-16 px-6">
+            <div
+              class="heading grid gap-4 justify-center items-center text-center"
+            >
+              <h2 class="uppercase font-extrabold text-xl">
+                EVALUATION PROGRAM
+              </h2>
+
+              <!-- Paras -->
+              <div class="paras">
+                <p>
+                  Prove your trading skills by passing our 2-Phase Challenge
+                  Program.
+                </p>
+                <p>
+                  Achieve the Profit Targets following simple Trading Objectives
+                  and start trading with our capital.
+                </p>
+                <p>You earn up to 80% of the profits.</p>
+              </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="cards flex gap-4 justify-center items-center mt-10">
+              <div
+                class="card flex flex-col gap-4 py-6 px-1 rounded-xl bg-gradient-to-r from-card-clrs-left to-card-clrs-right border-card-border border-2"
+              >
+                <!-- Card top -->
+                <div
+                  class="card-top py-4 px-4 rounded-xl bg-gradient-to-r from-card-inner-left to-card-inner-right flex gap-2 justify-between items-center"
+                >
+                  <div class="left max-w-[10rem]">
+                    <h4 class="font-semibold">Phase 1</h4>
+                    <span class="text-sm w-[2rem] l"
+                      >Starting your Evaluation process</span
+                    >
+                  </div>
+                  <div class="right grid">
+                    <div class="percent">
+                      <h3 class="font-bold text-2xl text-center">10%</h3>
+                      <span class="flex text-xs">Target Profit</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card middle -->
+                <div
+                  class="card-middle grid gap-2 px-4 text-[0.9rem] font-thin"
+                >
+                  <p><span class="font-bold">10</span> minimum Trading Days</p>
+                  <p><span class="font-bold">5%</span> minimum Trading Days</p>
+                  <p><span class="font-bold">10%</span> minimum Trading Days</p>
+                  <p>
+                    Trading Period up to <span class="font-bold">45 days</span>
+                  </p>
+                  <p>Registration fee</p>
+                </div>
+                <div
+                  class="card-bottom flex justify-center items-center text-center text-[0.9rem]"
+                >
+                  <a
+                    href="#"
+                    class="uppercase font-Montserrat flex justify-center items-center text-center mt-4 py-1 px-2 border-card-border border-2 rounded-md"
+                    >get started now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Title -->
+    <title>TheFundedHub</title>
+  </head>
+  <body>
+    <!------------------------- Header --------------------------->
+
+    <header>
+      <div class="container">
+        <div class="wrapper flex justify-between py-10">
+          <!-- Main logo -->
+          <a href="#" class="main-logo max-w-[3.5rem] flex gap-1">
+            <img src="./images/main-logo.png" alt="TheFundedHub" />
+            <h3 class="text-xl font-extrabold">TheFunded Hub</h3>
+          </a>
+
+          <!-- Nav bar -->
+          <nav
+            class="nav-links text-white font-thin flex justify-center items-center"
+          >
+            <ul class="flex gap-6 justify-center items-center">
+              <li>
+                <a
+                  href="#"
+                  class="flex font-semibold border-b border-transparent hover:border-white transition-all duration-300"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="flex font-semibold border-b border-white"
+                  >CONTACT US</a
+                >
+              </li>
+              <li>
+                <a href="#" class="flex font-semibold border-b border-white"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex font-semibold border-2 border-border rounded py-2 px-4"
+                  >MEMBER AREA</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!------------------------- Main --------------------------->
+    <main class="bg-map map-img bg-center bg-cover h-full w-full">
+      <div class="container">
+        <div
+          class="wrapper pt-20 flex flex-col justify-center items-center gap-10"
+        >
+          <!-- Top content -->
+          <div
+            class="heading grid gap-2 justify-center items-center text-center font-semibold"
+          >
+            <h1 class="text-6xl">Get Funded and trade our capital.</h1>
+            <h2 class="text-6xl">We take the risk.</h2>
+          </div>
+
+          <!-- Bottom content -->
+          <div
+            class="botton-content font-Montserrat grid grid-cols-2 gap-10 justify-center items-center max-w-4xl text-right"
+          >
+            <p class="font-medium text-base-[1.1rem]">
+              Where veteran and rookie traders all come together to compete in
+              the Hub. Trade how you like, pass the challenge & get funded with
+              our capital..
+            </p>
+
+            <div class="btn flex font-extrabold">
+              <a
+                href="#"
+                class="uppercase font-base flex justify-center items-center py-2 px-4 border-4 border-white rounded-md"
+                >get started now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

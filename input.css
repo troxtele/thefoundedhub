@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "codeProRegular";
+  src: url("../fonts/code-pro-regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "codeProLight";
+  src: url("../fonts/code-pro-light.otf") format("opentype");
+}
+
+@layer base {
+  html {
+    font-family: "codeProRegular";
+    font-weight: 400;
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: 82rem;
+  padding: 0 1.5rem;
+}
+body {
+  @apply bg-main-bg text-white;
+}
+body {
+  font-family: codeProRegular;
+}
+
+.map-img {
+  background-image: url("../images/map.png");
+}

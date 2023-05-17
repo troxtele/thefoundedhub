@@ -18,18 +18,27 @@
   }
 }
 
+section {
+  padding: 2.5rem 0;
+}
 .container {
   margin: auto;
   max-width: 82rem;
   padding: 0 1.5rem;
 }
 body {
-  @apply bg-main-bg text-white;
-}
-body {
-  font-family: codeProRegular;
+  @apply bg-main-bg text-white font-codeRegular;
 }
 
 .map-img {
   background-image: url("../images/map.png");
 }
+
+/* evaluation */
+
+.evaluation .wrapper {
+  box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+}
+

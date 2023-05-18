@@ -566,12 +566,24 @@ html {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mt-10 {
@@ -590,12 +602,24 @@ html {
   margin-top: 1rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-full {
@@ -616,6 +640,10 @@ html {
 
 .w-\[2rem\] {
   width: 2rem;
+}
+
+.w-\[5rem\] {
+  width: 5rem;
 }
 
 .w-full {
@@ -650,6 +678,14 @@ html {
   max-width: 90%;
 }
 
+.max-w-\[2rem\] {
+  max-width: 2rem;
+}
+
+.max-w-\[5rem\] {
+  max-width: 5rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -664,6 +700,10 @@ html {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -793,6 +833,11 @@ html {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -821,10 +866,6 @@ html {
 
 .to-card-inner-right {
   --tw-gradient-to: #462e49 var(--tw-gradient-to-position);
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-1 {
@@ -867,6 +908,11 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -880,21 +926,6 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pb-4 {
@@ -922,9 +953,18 @@ html {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-\[1\.05rem\] {
+  font-size: 1.05rem;
 }
 
 .text-base {
@@ -952,19 +992,6 @@ html {
   line-height: 1rem;
 }
 
-.text-\[1\.1rem\] {
-  font-size: 1.1rem;
-}
-
-.text-\[1\.05rem\] {
-  font-size: 1.05rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -977,6 +1004,10 @@ html {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -985,20 +1016,12 @@ html {
   font-weight: 100;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
 .capitalize {
   text-transform: capitalize;
-}
-
-.leading-\[0\.7\] {
-  line-height: 0.7;
 }
 
 .text-red-600 {
@@ -1011,8 +1034,9 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[1\.0\.5rem\] {
-  color: 1.0.5rem;
+.text-all {
+  --tw-text-opacity: 1;
+  color: rgb(101 68 130 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1042,11 +1066,10 @@ span {
 }
 
 p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.1rem;
 }
 
-section {
+section, footer {
   padding: 3.5rem 0;
 }
 
@@ -1074,6 +1097,11 @@ body {
   box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
   -moz-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+}
+
+.footer-gradient {
+  background: rgb(0,0,0);
+  background: linear-gradient(150deg, rgba(0,0,0,1) 0%, rgba(42,27,43,1) 100%);
 }
 
 /* FAQ */

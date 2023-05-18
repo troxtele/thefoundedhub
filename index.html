@@ -29,9 +29,26 @@
       <div class="container">
         <div class="wrapper flex justify-between py-10">
           <!-- Main logo -->
-          <a href="#" class="main-logo max-w-[3.5rem] flex gap-1">
-            <img src="./images/main-logo.png" alt="TheFundedHub" />
-            <h3 class="text-xl font-extrabold">TheFunded Hub</h3>
+          <a href="#" class="main-logo flex gap-1 relative">
+            <div class="img w-full">
+              <!-- logo-bg -->
+              <div class="logo-bg hidden">
+                <img
+                  class="w-[5rem] absolute left-0 bg-red-600"
+                  src="./images/main-logo-bg.svg"
+                  alt="logo-bg"
+                />
+              </div>
+              <img
+                class="max-w-[3.5rem] relative"
+                src="./images/main-logo.png"
+                alt="TheFundedHub"
+              />
+            </div>
+            <h3 class="text-xl font-extrabold">
+              TheFunded <br />
+              Hub
+            </h3>
           </a>
 
           <!-- Nav bar -->
@@ -108,7 +125,7 @@
         </div>
       </section>
       <!-- Section Wrapper -->
-      <div class="section-wrapper mt-20">
+      <div class="section-wrapper mt-20 mb-10">
         <div class="cotainer">
           <div class="shadow max-w-[90%] w-full m-auto py-16 px-6">
             <!------------------------- Evaluation --------------------------->
@@ -657,10 +674,114 @@
 
     <!------------------------- Footer --------------------------->
 
-    <footer>
+    <footer class="footer-gradient">
       <div class="container">
         <div class="wrapper">
-          
+          <div class="grid grid-cols-4 gap-10">
+            <!-- Item -->
+            <div class="item flex gap-1">
+              <div class="img flex justify-center items-center">
+                <img
+                  class="max-w-[5rem]"
+                  src="./images/main-logo.png"
+                  alt="logo"
+                />
+              </div>
+              <h3 class="text-3xl font-normal">
+                TheFunded <br />
+                Hub
+              </h3>
+            </div>
+            <!-- Item -->
+            <div class="item">
+              <div class="heading">
+                <h4 class="font-bold">Headquarters:</h4>
+              </div>
+              <!-- Info -->
+              <div class="info mt-1">
+                <span class="uppercase text-sm">THE FUNDED HUB LTD</span>
+                <span class="text-sm"
+                  >Honvéd utca 8. 1st floor, 1054 Budapest, Hungary.</span
+                >
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="item">
+              <div class="heading">
+                <h4 class="font-bold">Contact Us:</h4>
+              </div>
+              <!-- Contact -->
+              <div class="contact mt-1 grid gap-1">
+                <div class="email flex items-center gap-2">
+                  <div class="img">
+                    <svg
+                      class="text-all"
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 14 16"
+                      height="1.3em"
+                      width="1.3em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <!-- adress -->
+                  <a class="" href="mailto: support@thefundedhub.com"
+                    >support@thefundedhub.com</a
+                  >
+                </div>
+                <!-- Instagram -->
+                <div class="insta flex items-center gap-2">
+                  <div class="img">
+                    <svg
+                    class="text-all"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1.2em"
+                      width="1.2em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </div>
+                  <!-- adress -->
+                  <a target="_blank" href="https://www.instagram.com/fundedhub/"
+                    >@fundedhub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="item">
+              <ul>
+                <li><a href="#">Term and Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

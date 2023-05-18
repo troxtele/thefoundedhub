@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "codeProRegular";
-  src: url("../fonts/code-pro-regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "codeProLight";
-  src: url("../fonts/code-pro-light.otf") format("opentype");
-}
-
 @layer base {
   html {
-    font-family: "codeProRegular";
-    font-weight: 400;
+    font-family: "roboto";
   }
+}
+
+p,
+span {
+  @apply font-Montserrat font-medium;
+}
+
+p {
+  @apply text-lg;
 }
 
 section {
@@ -27,7 +26,7 @@ section {
   padding: 0 1.5rem;
 }
 body {
-  @apply bg-main-bg text-white font-codeRegular;
+  @apply bg-main-bg text-white font-normal;
 }
 
 .map-img {
@@ -36,9 +35,8 @@ body {
 
 /* evaluation */
 
-.evaluation .wrapper {
+.section-wrapper .shadow {
   box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
   -moz-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
 }
-

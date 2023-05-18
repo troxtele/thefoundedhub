@@ -578,16 +578,36 @@ html {
   left: 0px;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.-ml-6 {
+  margin-left: -1.5rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-2 {
@@ -600,14 +620,6 @@ html {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .flex {
@@ -646,8 +658,16 @@ html {
   width: 5rem;
 }
 
+.w-\[7rem\] {
+  width: 7rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-4xl {
@@ -674,16 +694,20 @@ html {
   max-width: 3rem;
 }
 
-.max-w-\[90\%\] {
-  max-width: 90%;
-}
-
-.max-w-\[2rem\] {
-  max-width: 2rem;
+.max-w-\[55rem\] {
+  max-width: 55rem;
 }
 
 .max-w-\[5rem\] {
   max-width: 5rem;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
 }
 
 .flex-shrink-0 {
@@ -704,6 +728,10 @@ html {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -728,6 +756,10 @@ html {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-1 {
@@ -868,9 +900,22 @@ html {
   --tw-gradient-to: #462e49 var(--tw-gradient-to-position);
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -891,6 +936,11 @@ html {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-10 {
@@ -930,6 +980,10 @@ html {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
 }
 
 .pt-10 {
@@ -992,6 +1046,15 @@ html {
   line-height: 1rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-\[1\.7rem\] {
+  font-size: 1.7rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1024,6 +1087,15 @@ html {
   text-transform: capitalize;
 }
 
+.leading-\[0\.7\] {
+  line-height: 0.7;
+}
+
+.text-all {
+  --tw-text-opacity: 1;
+  color: rgb(101 68 130 / var(--tw-text-opacity));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -1034,9 +1106,8 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-all {
-  --tw-text-opacity: 1;
-  color: rgb(101 68 130 / var(--tw-text-opacity));
+.text-\[1\] {
+  color: 1;
 }
 
 .underline {
@@ -1047,6 +1118,18 @@ html {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-all {
+  outline-color: #654482;
 }
 
 .transition-all {
@@ -1120,6 +1203,11 @@ body {
   position: absolute;
 }
 
+.before\:-top-12::before {
+  content: var(--tw-content);
+  top: -3rem;
+}
+
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
@@ -1138,6 +1226,21 @@ body {
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
+}
+
+.before\:content-\[\'Funded\'\]::before {
+  --tw-content: 'Funded';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Phase_1\'\]::before {
+  --tw-content: 'Phase 1';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Phase_2\'\]::before {
+  --tw-content: 'Phase 2';
+  content: var(--tw-content);
 }
 
 .before\:content-\[url\(\'\.\.\/images\/map\.png\'\)\]::before {

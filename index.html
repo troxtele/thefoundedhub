@@ -29,33 +29,20 @@
     <!-- Title -->
     <title>TheFundedHub</title>
   </head>
-  <body>
+  <body class="relative">
     <!------------------------- Header --------------------------->
-
-    <header>
+    <header
+      class="z-50 fixed left-0 right-0 bg-main-bg/80 backdrop-blur-3xl transition-all duration-300 border-b border-transparent py-4"
+    >
       <div class="container">
-        <div class="wrapper flex justify-between py-10">
+        <div class="wrapper flex justify-between ">
           <!-- Main logo -->
           <a href="#" class="main-logo flex gap-1 relative">
-            <div class="img w-full">
-              <!-- logo-bg -->
-              <div class="logo-bg hidden">
-                <img
-                  class="w-[5rem] absolute left-0 bg-red-600"
-                  src="./images/main-logo-bg.svg"
-                  alt="logo-bg"
-                />
-              </div>
-              <img
-                class="max-w-[3.5rem] relative"
-                src="./images/main-logo.png"
-                alt="TheFundedHub"
-              />
-            </div>
-            <h3 class="text-xl font-extrabold">
-              TheFunded <br />
-              Hub
-            </h3>
+            <img
+              class="max-w-[10rem] relative"
+              src="./images/logo.png"
+              alt="TheFundedHub"
+            />
           </a>
 
           <!-- Nav bar -->
@@ -98,11 +85,11 @@
     </header>
 
     <!------------------------- Main --------------------------->
-    <main
-      class="relative before:absolute before:content-[url('../images/map.png')] before:w-full before:left-0 before:right-0 before:top-0 overflow-hidden"
-    >
-      <section class="relative">
-        <div class="container">
+    <main class="overflow-hidden">
+      <section class="main pt-32">
+        <div
+          class="container relative before:absolute before:content-[url('../images/map.png')] before:left-1/2 before:transform before:-translate-x-1/2"
+        >
           <div
             class="wrapper flex flex-col justify-center items-center gap-10 pt-10"
           >
@@ -133,12 +120,11 @@
               </div>
             </div>
           </div>
-  
         </div>
       </section>
       <!-- Section Wrapper -->
       <div class="section-wrapper mt-20 mb-10">
-        <div class="cotainer">
+        <div class="container">
           <div class="shadow max-w-[90%] w-full m-auto py-16 px-6">
             <!------------------------- Evaluation --------------------------->
             <section class="evaluation relative max-w-[90%] m-auto">
@@ -484,7 +470,9 @@
                 <div
                   class="heading grid gap-4 justify-center items-center text-center"
                 >
-                  <h2 class="text-[1.7rem] font-extrabold">DASHBOARD AND TOOLS</h2>
+                  <h2 class="text-[1.7rem] font-extrabold">
+                    DASHBOARD AND TOOLS
+                  </h2>
                   <p class="text-base max-w-[55rem]">
                     To easily track your performance, you will have access to
                     your own personal Dashboard to
@@ -676,7 +664,9 @@
                 <!-- Right content -->
                 <div class="right grid gap-4">
                   <div class="heading">
-                    <h2 class="text-[1.7rem] font-extrabold">JOIN OUR DISCORD</h2>
+                    <h2 class="text-[1.7rem] font-extrabold">
+                      JOIN OUR DISCORD
+                    </h2>
                   </div>
                   <p>
                     Where veteran and rookie traders all come together to talk
@@ -870,17 +860,16 @@
           <div class="top-content grid grid-cols-4 gap-10">
             <!-- Item -->
             <div class="item flex gap-1">
-              <div class="img flex justify-center items-center">
-                <img
-                  class="max-w-[5rem]"
-                  src="./images/main-logo.png"
-                  alt="logo"
-                />
+              <!-- Main logo -->
+              <div class="logo">
+                <a href="#" class="main-logo flex gap-1 relative">
+                  <img
+                    class="relative"
+                    src="./images/logo.png"
+                    alt="TheFundedHub"
+                  />
+                </a>
               </div>
-              <h3 class="text-3xl font-normal">
-                TheFunded <br />
-                Hub
-              </h3>
             </div>
             <!-- Item -->
             <div class="item">

@@ -17,7 +17,8 @@ p {
   @apply text-[1.1rem];
 }
 
-section, footer {
+section,
+footer {
   padding: 3.5rem 0;
 }
 .container {
@@ -42,10 +43,13 @@ body {
 }
 
 .footer-gradient {
-  background: rgb(0,0,0);
-background: linear-gradient(150deg, rgba(0,0,0,1) 0%, rgba(42,27,43,1) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(42, 27, 43, 1) 100%
+  );
 }
-
 
 /* FAQ */
 .full-height {
@@ -53,4 +57,8 @@ background: linear-gradient(150deg, rgba(0,0,0,1) 0%, rgba(42,27,43,1) 100%);
 }
 .rotate-arrow {
   @apply rotate-180;
+}
+
+.drop {
+  @apply drop-shadow-[0_10px_8px_rgba(20,13,20,1)] border-all/20 py-2;
 }

@@ -423,7 +423,8 @@ video {
 }
 
 html {
-  font-family: "roboto";
+  font-family: "Code Pro regular";
+  font-weight: 900;
 }
 
 *, ::before, ::after {
@@ -1110,14 +1111,6 @@ html {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1126,6 +1119,43 @@ html {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+/* @font-face {
+  font-family: "Code Pro";
+  src: url("./fonts/Code-Pro-Light-LC.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Code Pro Light";
+
+  src: url("../fonts/Code-Pro-Light-LC.woff2") format("woff2");
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Code Pro regular";
+
+  src: url("../fonts/Code-Pro-LC.otf") format("opentype");
+
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Code Pro bold";
+
+  src: url("./fonts/co") format("opentype");
+
+  font-weight: 900;
+
+  font-style: normal;
 }
 
 p,

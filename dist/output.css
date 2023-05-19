@@ -571,6 +571,10 @@ html {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -585,6 +589,10 @@ html {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[99\] {
+  z-index: 99;
 }
 
 .col-span-1 {
@@ -631,6 +639,14 @@ html {
   margin-top: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -639,8 +655,16 @@ html {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-0 {
@@ -657,6 +681,10 @@ html {
 
 .w-\[2rem\] {
   width: 2rem;
+}
+
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .w-\[7rem\] {
@@ -852,6 +880,11 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-main-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 15 23 / var(--tw-bg-opacity));
 }
 
 .bg-main-bg\/80 {
@@ -1227,6 +1260,13 @@ body {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+/* buttons */
+
+.button-outline {
+  outline-width: 2px;
+  outline-color: #C381FC;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1276,4 +1316,10 @@ body {
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:flex {
+    display: flex;
+  }
 }

@@ -61,7 +61,6 @@ body {
 }
 
 /* evaluation */
-
 .section-wrapper .shadow {
   box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
@@ -84,7 +83,11 @@ body {
 .rotate-arrow {
   @apply rotate-180;
 }
-
 .drop {
   @apply drop-shadow-[0_10px_8px_rgba(20,13,20,1)] border-all/20 py-2;
+}
+
+/* buttons */
+.button-outline {
+  @apply outline-shine outline-2;
 }
